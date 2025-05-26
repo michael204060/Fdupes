@@ -41,7 +41,7 @@ char* get_mime_type(magic_t magic_cookie, const char *path) {
     return mime_type ? strdup(mime_type) : NULL;
 }
 
-// Вычисляем MD5 хеш файла (современная версия)
+// Вычисляем MD5 хеш файла 
 void calculate_md5(const char *path, unsigned char *md5_result) {
     FILE *file = fopen(path, "rb");
     if (!file) {
